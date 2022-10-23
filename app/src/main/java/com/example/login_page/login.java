@@ -44,8 +44,7 @@ public class login extends AppCompatActivity {
         });
     }
 
-
-    public void registerbuttonclick(View view) {
+    public void loginbuttonclick(View view) {
         String username_ = username_var.getEditText().getText().toString();
         String password_ = password_var.getEditText().getText().toString();
 
@@ -96,7 +95,7 @@ public class login extends AppCompatActivity {
                 });
 
 
-                Query check_password = databaseReference.orderByChild("password").equalTo(password_data);
+
 
             } else {
                 password_var.setError("This field is required");
