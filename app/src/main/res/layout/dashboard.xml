@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:padding="20dp"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background">
+    android:background="@drawable/gradient_background"
+    android:padding="20dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,80 +21,88 @@
             android:textSize="46dp"
             android:textStyle="bold" />
 
-<!--username-->
+        <!--username-->
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_marginBottom="10dp"
-            android:hint="username"
             android:clickable="false"
+            android:hint="username"
             android:tooltipText="username">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/vector_name"
+                android:drawablePadding="10dp"
                 android:enabled="false"
-                android:drawablePadding="10dp" />
+                android:shadowColor="@color/black"
+                android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
-<!--name-->
+        <!--name-->
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_marginBottom="10dp"
-            android:hint="Full Name"
             android:clickable="false"
+            android:hint="Full Name"
             android:tooltipText="Name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/name"
+                android:drawablePadding="10dp"
                 android:enabled="false"
-                android:drawablePadding="10dp" />
+                android:shadowColor="@color/black"
+                android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
-<!--dob-->
+        <!--dob-->
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_marginBottom="10dp"
-            android:hint="dob"
             android:clickable="false"
+            android:hint="dob"
             android:tooltipText="dob">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/dob"
+                android:drawablePadding="10dp"
                 android:enabled="false"
-                android:drawablePadding="10dp" />
+                android:shadowColor="@color/black"
+                android:textColor="@color/black" />
 
-<!--email-->
+            <!--email-->
         </com.google.android.material.textfield.TextInputLayout>
 
-<!--email-->
+        <!--email-->
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_marginBottom="10dp"
-            android:hint="email"
             android:clickable="false"
+            android:hint="email"
             android:tooltipText="email">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/email"
-                android:enabled="false"
                 android:drawablePadding="10dp"
-                android:inputType="textEmailAddress"/>
+                android:enabled="false"
+                android:inputType="textEmailAddress"
+                android:shadowColor="@color/black"
+                android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
 

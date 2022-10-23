@@ -74,17 +74,6 @@
 
         </LinearLayout>
 
-        <!--        forgot password-->
-        <Button
-            android:id="@+id/fpassword_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#0af7bc"
-            android:elevation="5dp"
-            android:text="Forgot Password"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
 
         <!--        login button-->
         <Button

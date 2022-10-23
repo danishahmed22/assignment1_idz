@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.textfield.TextInputLayout;
@@ -38,8 +37,6 @@ public class login extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), signup.class);
                 startActivity(intent);
-
-
             }
         });
     }
@@ -75,7 +72,6 @@ public class login extends AppCompatActivity {
                                 password_var.setError(null);
                                 password_var.setErrorEnabled(false);
                                 Toast.makeText(getApplicationContext(), "Welcome back home", Toast.LENGTH_SHORT).show();
-
                                 Intent intent = new Intent(getApplicationContext(),dashboard.class);
                                 startActivity(intent);
                                 finish();
@@ -85,17 +81,35 @@ public class login extends AppCompatActivity {
                         }else{
                             username_var.setError("Username does not exist please register yourself");
                         }
-
                     }
-
                     @Override
                     public void onCancelled(@NonNull DatabaseError error) {
 
                     }
+
+//                    private void isUser(){
+//                        final String userEnteredUsername = username_var.getEditText().getText().toString().trim();
+//                        final String userEnteredPassword = password_var.getEditText().getText().toString().trim();
+//
+//                        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users");
+//
+//                        Query checkuser = reference.orderByChild("username").equalTo(userEnteredUsername);
+//                        checkuser.addListenerForSingleValueEvent(new ValueEventListener() {
+//                            @Override
+//                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                                if(snapshot.exists()){
+//                                    username_var.setError(null);
+//                                    username_var.setErrorEnabled(false);
+//                                    String passwordfromdb = snapshot.child(userEnteredUsername).child("password").getValue(String.class);
+//                            }
+//
+//                            @Override
+//                            public void onCancelled(@NonNull DatabaseError error) {
+//
+//                            }
+//                        };
+
                 });
-
-
-
 
             } else {
                 password_var.setError("This field is required");
